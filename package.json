@@ -7,7 +7,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production remix build",
     "dev": "cross-env NODE_ENV=development remix dev",
-    "postinstall": "remix setup node",
+    "postinstall": "npx patch-package && remix setup node",
     "start": "cross-env NODE_ENV=production remix-serve build"
   },
   "dependencies": {
